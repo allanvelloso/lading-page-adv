@@ -1,0 +1,40 @@
+footer{
+    background-color: #d8a7aa;
+    
+    
+}
+#footer_itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+.contato{
+    color: #fff;
+}
+
+.contato i{
+    margin-left: 20px;
+    margin-right: 3px
+}
+
+#copyright{
+    color: #fff;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_itens{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contato {
+        display: none;
+       
+    }
+}

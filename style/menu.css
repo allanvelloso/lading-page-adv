@@ -1,0 +1,89 @@
+#menu{
+    background-image: url(../image/fundo1.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+   
+}
+
+
+#dishes{
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.dish{
+    
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.422);
+    position: relative;
+    overflow: hidden;
+}
+
+.dish > img{
+    width: 70px;
+    height: auto;
+}
+
+.dish-heart{
+    position: absolute;
+    background-color:#ddafb1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #273454;
+    width: 60px;
+    height: 60px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+
+}
+
+.dish-description{
+    
+    color: #273454;
+    text-align: center;
+}
+
+
+@media screen and ( max-width: 1170px){
+    #dishes{
+        flex-wrap:  wrap;
+        justify-content: center;
+    }
+
+    .dish{
+        width: calc(50% - 12%);
+    }
+}
+
+@media screen and ( max-width: 600px) {
+
+    .dish{
+        width: 100%
+    }
+}

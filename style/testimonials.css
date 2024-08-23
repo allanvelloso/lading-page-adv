@@ -9,17 +9,26 @@
 
 #testimonials_chef{
     
-    width: 35%;
+    width: 25%;
     position: absolute;
-    bottom: -5%;
-    left: 0;
+    bottom: -0%;
+    left: 80%;
     transform: translateX(-20%);
+    opacity: 35%;
     
 }
 
 #testimonials .section-subtitle{
+    padding: 10px;
     color: #273454;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#testimonials .section-title{
+    text-align: center;
+    color: #ddafb1;
+    font-size: 2.5rem;
 }
 
 #testimonials_content {

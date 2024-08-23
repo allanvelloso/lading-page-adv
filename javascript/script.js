@@ -20,17 +20,7 @@ $(document).ready(function() {
             header.css('box-shadow','5px 1px 5px rgba(0,0,0,0.100');
         }
 
-        sections.each(function(i){
-            const section = $(this);
-            const sectionTop = section.offset().top - 96;
-            const sectionBottom = sectionTop+ section.outerHeight();
-
-            if(scrollPosition >= sectionTop && scrollPosition < sectionBottom){
-                activeSectionIndex = i;
-                return false
-
-            }
-        })
+        
 
         naviItems.removeClass('active');
         $(naviItems[activeSectionIndex]).addClass('active');
@@ -58,6 +48,12 @@ $(document).ready(function() {
     ScrollReveal().reveal('.feedbeck', {
         origin: 'right',
         duration: 1000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.img', {
+        origin: 'right',
+        duration: 2000,
         distance: '20%'
     });
 });

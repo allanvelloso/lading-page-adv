@@ -1,11 +1,18 @@
 #home {
     display: flex;
-    min-height: calc(100vh - 91px);
+    min-height: (100vh - 91px);
     position: relative;
+    
 }
 
 #cta {
-    width: 60%;
+    background-color: #f9eeed;
+    width: 45%;
+    padding: 40px;
+    border-radius: 40px 40px 40px 40px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.075);
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -14,10 +21,10 @@
 
 #cta .title{
     font-size: 3.5rem;
-    color: #273454;
+    color: #c2b8b7;
 }
 #cta .title span{
-    color: #ddafb1;
+    color: #273454;
 }
 
 #cta .description{
@@ -25,7 +32,7 @@
     font-size: 1.2rem;
 }
 #cta_buttons{
-   
+    margin: auto;
     display: flex;
     gap: 28px;
 }
@@ -34,6 +41,7 @@
 }
 
 #phone_button{
+    
     display: flex;
     gap: 8px;
     align-items: center;
@@ -49,51 +57,19 @@
     box-shadow: none;
 }
 
-#banner{
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 100%;
+#banner .img{
+
+    width: 29%;
+    position: absolute;
+    bottom: 0%;
+    left: 65%;
     z-index: 2;
-    position: relative;
-}
-
-.img{
-    width: 55%;
-    position: absolute;
-    bottom: 0;
-    left: 65.5%;
-    transform: translateX(-10%);
-}
-
-.texto-img{
-    margin: 15%;
-    padding: 15%;
-    margin-top: 10%;
-    text-align: center;
-    color: #ddafb1;
-}
-
-.shape{
-    background-color: #273454;
-    width: 50%;
-    height: 96%;
-    position: absolute;
-    border-radius: 25% 3% 10% 3%;
-    top: 0;
-    right: 0;
-    z-index: 1;
 }
 
 @media screen and (max-width: 1170px) {
     #home {
         min-width: 100%;
         padding-top: 0px;
-    }
-
-    #banner, #banner img, #home .shape{
-        display: none;
-        
     }
 
     #cta {
@@ -106,5 +82,21 @@
 @media screen and (max-width: 450px){
     #phone_button button {
         display: none;
+    }
+
+    .shape{
+        display: none;
+        
+    }
+
+    #banner .img{
+        display: none;
+    }
+
+    #cta{
+        background: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
     }
 }

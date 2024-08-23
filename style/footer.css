@@ -1,14 +1,13 @@
 footer{
-    background-color: #d8a7aa;
+    background-color: #273454;
     
     
 }
 #footer_itens{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
-    margin: 5px;
     align-items: center;
     gap: 10px;
   
@@ -25,7 +24,8 @@ footer{
 
 #copyright{
     color: #fff;
-    font-weight: 500;
+    font-size: small;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 600px) {

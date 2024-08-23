@@ -1,65 +1,50 @@
 #menu{
-    background-image: url(../image/fundo1.png);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    
-    
-    
-
-    display:flex;
+   display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-height: 90vh;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
    
 }
 
 
 #dishes{
-
-    
-    width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
+    justify-content:center;
+    gap: 20px;
+    margin: 50px;
 }
 
 .dish{
-    
-    
+    border: double rgba(0, 0, 0, 0.132);
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    gap: 18px;
-    width: 25%;
+    gap: 28px;
+
+    text-align: center;
+    
     padding: 20px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.422);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.137);
     position: relative;
     overflow: hidden;
 }
 
-.dish > img{
-    width: 70px;
-    height: auto;
-}
-
 .dish-heart{
     position: absolute;
-    background-color:#ddafb1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.563rem;
-    color: #273454;
-    width: 60px;
-    height: 60px;
-    right: -10px;
+    font-size: 1.5rem;
+    color: #c2b8b7;
+    width: 65px;
+    height: 65px;
+    right: -8px;
     top: -10px;
-    border-radius: 0px 37.5px 0px 42.5px;
 
 }
 
